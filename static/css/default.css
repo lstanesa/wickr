@@ -2,3 +2,34 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+h1,h2,h3 {
+    margin: 0;
+}
+
+a, a:visited {
+    color: #6177a0;
+}
+
+a:hover {
+    color: #7288b1;
+}
+
+#header {
+    display: block;
+    padding: 5px;
+    background: #eeeeef;
+}
+
+#header a {
+    margin: 0;
+    text-decoration: none;
+}
+
+#section {
+    margin: 2px 0;
+}
+
+#section .head {
+    border-bottom: 1px solid #efefef;
+}
