@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="section">
+        <h1 class="head">{{ article.name }} <span class="min">(created {{ article.created }})</span></h1>
+        <div class="body">
+        {% if article.content %}
+            <p>{{ article.content }}</p>
+        {% else %}
+            <p>There is no content on this page</p>
+        {% endif %}
+        </div>
+    </div>
+{% endblock %}
