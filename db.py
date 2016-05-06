@@ -35,8 +35,10 @@ class Database:
     def commit(self):
         self.dbh.commit()
 
-    def close(self, docommit=False):
-        self.commit()
+    def close(self, docommit=True):
+        if docommit:
+            self.commit()
+        
         self.cursor.close()
         self.dbh.close()
 
